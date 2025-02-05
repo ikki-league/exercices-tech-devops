@@ -1,5 +1,6 @@
 ### Consignes : 
-- Nous (IKKI League) nous positionnons en tant que client de la demande énoncée ci-dessous. Vous pouvez nous contacter par e-mail en cas de question(s) sur la demande si celle-ci n'est pas claire.
+- 🚨 Ceci est un exercice qu'il faut prendre comme une simulation de situation réelle 🚨 
+- Nous (IKKI League) nous positionnons en tant que client de la demande énoncée ci-dessous. Vous pouvez nous contacter par e-mail en cas de question(s) sur la problématique à résoudre ci-dessous.
 
 ### Contexte :
 Nous développons une application web en microservices qui doit être déployée sur une infrastructure cloud. L'application doit être scalable, résiliente, et capable de supporter des pics de charge importants.

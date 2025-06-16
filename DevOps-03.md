@@ -13,7 +13,7 @@ Nous développons une application web en microservices qui doit être déployée
 
 #### Partie 2 : Automatisation d'une Pipeline CI/CD 
 - **Tâche :** Décrivez et mettez en œuvre une pipeline CI/CD basique pour l’un des microservices de l’application.
-  - Ce service est une API Node.js.
+  - Ce service est une API qui fournit les informations sous forme de liste pour l'application.
   - La pipeline doit inclure : 
     1. Un contrôle de la qualité du code 
     2. Une phase de build 

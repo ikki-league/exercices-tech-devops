@@ -1,0 +1,11 @@
+.venv/
+venv/
+data/
+logs/
+*.png
+.DS_Store
+*.prod
+*.prod.*
+.env*
+root_password.txt
+**.sw*

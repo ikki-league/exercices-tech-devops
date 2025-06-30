@@ -1,0 +1,62 @@
+stages:
+  - code_quality
+  - build
+  - deploy_dev
+  - deploy_staging
+  - deploy_prod
+
+mega-linter-job:
+  stage: code_quality
+  image: oxsecurity/megalinter:v7
+  variables:
+    DEFAULT_WORKSPACE: "${CI_PROJECT_DIR}"
+  script:
+    - echo "Running MegaLinter on ${DEFAULT_WORKSPACE}"
+  only:
+    - dev
+    - staging
+    - production
+
+build_job:
+  stage: build
+  script:
+    - echo "Building the project..."
+    - make build
+  artifacts:
+    paths:
+      - bin/
+
+deploy-to-dev:
+  stage: deploy_dev
+  environment:
+    name: dev
+    url: https://dev.ikki.local
+  script:
+    - echo "Deploying to dev..."
+    - echo "Application successfully deployed to dev."
+  only:
+    - dev
+
+deploy-to-staging:
+  stage: deploy_staging
+  environment:
+    name: staging
+    url: https://staging.ikki.local
+  script:
+    - echo "Deploying to staging..."
+    - echo "Application successfully deployed to staging."
+  only:
+    - staging
+
+
+deploy-to-prod:
+  stage: deploy_prod
+  environment:
+    name: production
+    url: https://prod.ikki.local
+  script:
+    - echo "Deploying to production..."
+    - make deploy
+  rules:
+    - if: $CI_COMMIT_BRANCH == "production" 
+      when: manual

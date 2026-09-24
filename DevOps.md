@@ -93,6 +93,4 @@ Nous vous demandons de nous présenter votre proposition sous forme de :
 
 N'hésitez pas à nous contacter si vous avez besoin de précisions sur notre contexte, nos contraintes techniques ou nos attentes. Nous sommes disponibles pour échanger et vous fournir les informations complémentaires nécessaires à l'élaboration de votre proposition.
 
-**Contact :** [recruteur@ikki-league.com]
-
 ---
